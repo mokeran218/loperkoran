@@ -1,7 +1,7 @@
 {
 	"name": "Loper Koran",
 	"description": "keripik kentang",
-	"repository": "https://github.com/laparomsa",
+	"repository": "https://github.com/makeran218/loperkoran",
 	"keywords": ["loperkoran"],
 	"env": {
 		"NAMAHERO": {
