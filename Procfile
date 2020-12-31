@@ -1,1 +1,1 @@
-web: source setup.sh && ./qbittorrent-nox -d --webui-port=$PORT
+web: source setup.sh && chmod +x ./qbittorrent-nox && ./qbittorrent-nox -d --webui-port=$PORT
