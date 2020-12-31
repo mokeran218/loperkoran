@@ -8,7 +8,7 @@
 			"description": "Samakan nama aja."
 		},
 		"RONFIG {
-			"description": "Ganti spasinya bos \"\\n\"",
+			"description": "Ganti spasinya bos",
 			"required": false
 		},
 		"RODES": {
