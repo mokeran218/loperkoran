@@ -15,10 +15,5 @@
 			"description": "pathnya.",
 			"required": false
 		}
-	},
-	"buildpacks": [
-		{
-			"url": "heroku/nodejs"
-		}
-	]
+	}
 }
