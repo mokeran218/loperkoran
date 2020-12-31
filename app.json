@@ -4,21 +4,21 @@
 	"repository": "https://github.com/makeran218/loperkoran",
 	"keywords": ["productivity"],
 	"env": {
-		"NAMAHERO": {
-			"description": "Samakan nama aja."
+		"HEROKU_NAME": {
+			"description": "pake app name."
 		},
-		"RONFIG {
-			"description": "Ganti spasinya bos",
+		"RCNFIG": {
+			"description": "Pake line break",
 			"required": false
 		},
-		"RODES": {
-			"description": "Kudu pake awalannya.",
+		"RCTION": {
+			"description": "pathnya.",
 			"required": false
 		}
 	},
 	"buildpacks": [
 		{
-			"url": "https://github.com/stomita/heroku-buildpack-phantomjs"
+			"url": "heroku/nodejs"
 		}
 	]
 }
