@@ -12,7 +12,7 @@
 			"required": false
 		},
 		"RODES": {
-			"description": "Kudu pake / awalannya.",
+			"description": "Kudu pake awalannya.",
 			"required": false
 		}
 	},
