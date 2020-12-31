@@ -1,0 +1,24 @@
+{
+	"name": "Loper Koran",
+	"description": "keripik kentang",
+	"repository": "https://github.com/laparomsa",
+	"keywords": ["loperkoran"],
+	"env": {
+		"NAMAHERO": {
+			"description": "Samakan nama aja."
+		},
+		"RONFIG {
+			"description": "Ganti spasinya bos \"\\n\"",
+			"required": false
+		},
+		"RODES": {
+			"description": "Kudu pake / awalannya.",
+			"required": false
+		}
+	},
+	"buildpacks": [
+		{
+			"url": "heroku/nodejs"
+		}
+	]
+}
