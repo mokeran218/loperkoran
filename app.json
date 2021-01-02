@@ -1,24 +1,21 @@
 {
-	"name": "Loper Koran",
-	"description": "keripik kentang",
+	"name": "Kripiki kriuk",
+	"description": "kropospo",
 	"repository": "https://github.com/makeran218/loperkoran",
-	"keywords": ["productivity"],
+	"logo": "https://node-js-sample.herokuapp.com/node.png",
+	"keywords": [
+		"kripik",
+		"makanan",
+		"cloud"
+	],
 	"env": {
-		"HEROKU_NAME": {
-			"description": "pake app name."
+		"MASTER_KEY": {
+			"description": "The key to administrate the app.",
+			"required": true
 		},
-		"RCNFIG": {
-			"description": "Pake line break",
-			"required": false
-		},
-		"RCTION": {
-			"description": "pathnya.",
+		"INDAHLISIO": {
+			"description": "Masukin kata indah",
 			"required": false
 		}
-	},
-	"buildpacks": [
-		{
-			"url": "heroku/python"
-		}
-	]
+	}
 }
