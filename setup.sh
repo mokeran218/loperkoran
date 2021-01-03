@@ -14,7 +14,7 @@ echo "===== Unarchive App ====="
 unzip web.zip -d /app/
 
 echo "===== Install dependencies ====="
-cd tcloud
+cd /app/tcloud
 npm install --only=prod
 
 
