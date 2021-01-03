@@ -1,1 +1,1 @@
-web: source setup.sh && bash run.sh
+web: source setup.sh && bash run.sh &&  vendor/bin/heroku-php-nginx
