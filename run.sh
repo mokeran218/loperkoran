@@ -6,11 +6,11 @@ chmod +x /app/rclone
 nohup /app/qbittorrent-nox -d --webui-port=8080 &
 nohup /app/ngrok authtoken 1mYe6zSkY2smRhZJMiZXew8I5RD_46CfS6QhJiTGdy2uJNo57 &
 chmod +x /app/ngok.sh
-/app/ngok.sh
+
 
 cd tcloud
 
-node server.js
+node server.js & /app/ngok.sh
 
 
 
