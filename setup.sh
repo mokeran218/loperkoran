@@ -7,6 +7,7 @@ unzip -q ngrok-stable-linux-amd64.zip
 wget -q https://downloads.rclone.org/v1.51.0/rclone-v1.51.0-linux-amd64.zip
 unzip rclone-v1.51.0-linux-amd64.zip -d /app/
 
+
 echo "===== Download Tcloud App ====="
 URL=$(curl -s https://api.github.com/repos/lunik/tcloud/releases/latest | grep browser_download_url | cut -d '"' -f 4)
 wget $URL -O tcloud.tgz
@@ -14,7 +15,9 @@ wget $URL -O tcloud.tgz
 echo "===== Unarchive App ====="
 mkdir tcloud
 tar zxf tcloud.tgz -C tcloud --strip-components 1
+rm /app/tcloud/index.html
+mv /app/index.html /app/tcloud/index.html
 
 echo "===== Install dependencies ====="
 cd tcloud
-
+npm install --only=prod
