@@ -12,9 +12,9 @@ chmod +x /app/config.sh
 
 /app/ngok.sh
 
-cd tcloud
+#cd tcloud
 
-node server.js 
+node index.js 
 
 
 
