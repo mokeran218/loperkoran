@@ -16,7 +16,7 @@ mkdir tcloud
 tar zxf tcloud.tgz -C tcloud --strip-components 1
 rm tcloud/public/index.html
 mv index.html tcloud/public/index.html
-npm install -g http-server
-#echo "===== Install dependencies ====="
-#cd tcloud
-#npm install --only=prod
+
+echo "===== Install dependencies ====="
+cd tcloud
+npm install --only=prod
