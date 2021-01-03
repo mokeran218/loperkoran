@@ -9,7 +9,7 @@
 		"cloud"
 	],
 	"env": {
-		"CLIENTD": {
+		"MASTER_KEY": {
 			"description": "si klien kalo bersama edi.",
 			"required": true
 		},
