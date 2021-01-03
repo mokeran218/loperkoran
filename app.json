@@ -9,8 +9,8 @@
 		"cloud"
 	],
 	"env": {
-		"MASTER_KEY": {
-			"description": "The key to administrate the app.",
+		"CLIENTD": {
+			"description": "si klien kalo bersama edi.",
 			"required": true
 		},
 		"INDAHLISIO": {
