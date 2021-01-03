@@ -10,17 +10,15 @@ cd tcloud
 
 node server.js
 
-cat << EOF > rclone.sh
-#!/bin/bash
 DIR="/app/tcloud/files/"
 while true; do
-    if [ -z "$(ls -A $DIR)" ]; then
+    if [ "$(ls -A "$DIR")" == ""  ]; then
         echo "Empty"
     else
         /app/rclone-v1.51.0-linux-amd64/rclone --config /app/rclone-v1.51.0-linux-amd64/rclone.conf move /app/tcloud/files/  Nintoma-muker:hero -vvv --delete-empty-src-dirs --fast-list --tpslimit=5 --transfers=5 --checkers=10 --log-file=/app/rclone.log
     fi
 
-  sleep 5;
+  sleep 10;
 done
-EOF
+
 
