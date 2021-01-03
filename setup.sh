@@ -9,12 +9,14 @@ unzip rclone-v1.51.0-linux-amd64.zip -d /app/
 export PATH=$PWD/rclone-v1.51.0-linux-amd64:$PATH
 
 
-
 echo "===== Unarchive App ====="
-unzip web.zip -d /app/
+mkdir tcloud
+tar zxf web.tgz -C tcloud --strip-components 1
+
+
 
 echo "===== Install dependencies ====="
-cd /app/tcloud
+cd tcloud
 npm install --only=prod
 
 
