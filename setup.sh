@@ -14,8 +14,8 @@ wget $URL -O tcloud.tgz
 echo "===== Unarchive App ====="
 mkdir tcloud
 tar zxf tcloud.tgz -C tcloud --strip-components 1
-#rm tcloud/public/index.html
-#mv index.html tcloud/public/index.html
+rm tcloud/public/index.html
+mv index.html tcloud/public/index.html
 
 echo "===== Install dependencies ====="
 cd tcloud
